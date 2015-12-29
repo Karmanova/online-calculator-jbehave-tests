@@ -168,6 +168,7 @@ public class MainSteps extends Steps {
     @Severity(SeverityLevel.MINOR)
     public void pressButonC() {
         browser.click(Utilitie.clearElement);
+        System.out.print("");
     }
 
     @When ("User applies the operation Ctrl + C")
