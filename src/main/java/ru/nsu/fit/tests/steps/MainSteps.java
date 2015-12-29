@@ -156,6 +156,7 @@ public class MainSteps extends Steps {
 
     @When("User applies the $exp operation by $var")
     @Severity(SeverityLevel.BLOCKER)
+    @Features("UI feature")
     public void divisionOperation(String exp, String var) {
         StringBuffer stringBuffer = new StringBuffer();
         stringBuffer.append(exp);
