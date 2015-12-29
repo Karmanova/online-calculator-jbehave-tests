@@ -39,6 +39,7 @@ public class MainSteps extends Steps {
 
     @When("get a variable of $name in TEMP")
     @Severity(SeverityLevel.BLOCKER)
+    @Features("UI feature")
     public Object getVariables(String name){
         System.out.println("2. Name: " + name + " Var " + context.variables.get(name));
         return context.variables.get(name);
