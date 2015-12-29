@@ -5,6 +5,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import ru.nsu.fit.tests.shared.AllureUtils;
 import ru.nsu.fit.tests.shared.ImageUtils;
 
 import java.io.Closeable;
@@ -49,6 +50,7 @@ public class Browser implements Closeable {
 
     public Browser click(By element) {
         webDriver.findElement(element).click();
+        AllureUtils.saveImageAttach("Clicked ", this.makeScreenshot());
         return this;
     }
 
