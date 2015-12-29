@@ -31,6 +31,7 @@ public class MainSteps extends Steps {
     //Context steps
     @When("put a $name of $variable in TEMP")
     @Severity(SeverityLevel.BLOCKER)
+    @Features("UI feature")
     public void putVariables(String name, String variable){
         System.out.println("1. Name: " + name + " Var " + variable);
         context.variables.put(name, variable);
